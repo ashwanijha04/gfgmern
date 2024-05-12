@@ -5,6 +5,14 @@
     <title>
         GeeksForGeeks
     </title>
+    <style>
+        .red {
+            color: red;
+        }
+        .green {
+            color: green;
+        }
+    </style>
 </head>
 
 <body style="text-align: center;">
@@ -23,7 +31,8 @@
             id="userName">
     </div>
     <script>
-        const queryS = 
+
+const queryS = 
               document.querySelector(".example");
         const gebi = 
               document.getElementById("target");
@@ -41,6 +50,23 @@
         console.log(gebn);
         console.log(gebtn);
         console.log(querySAll);
+
+
+        
+        const userNameInput = document.getElementById('userName');
+        userNameInput.addEventListener('input', function() {
+            const headings = document.querySelectorAll('h1, h2');
+            const paragraphs = document.querySelectorAll('p');
+
+            headings.forEach((heading) => {
+                heading.classList.add('red');
+            });
+
+            
+            paragraphs.forEach(function(paragraph) {
+                paragraph.classList.add('green');
+            });
+        });
     </script>
 </body>
 
