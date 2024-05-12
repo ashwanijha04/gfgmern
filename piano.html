@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Virtual Piano</title>
+<style>
+    .piano-key {
+        width: 60px;
+        height: 200px;
+        background-color: white;
+        border: 1px solid black;
+        display: inline-block;
+        position: relative;
+    }
+    .piano-key.black {
+        width: 40px;
+        height: 120px;
+        background-color: black;
+        position: absolute;
+        left: 45px;
+        z-index: 1;
+        margin: 0 5px;
+    }
+    .piano { position: relative; }
+</style>
+</head>
+<body>
+<div class="piano">
+    <div class="piano-key" onclick="playSound('C')">C</div>
+    <div class="piano-key black" onclick="playSound('C#')">C#</div>
+    <div class="piano-key" onclick="playSound('D')">D</div>
+    <div class="piano-key black" onclick="playSound('D#')">D#</div>
+    <div class="piano-key" onclick="playSound('E')">E</div>
+    <div class="piano-key" onclick="playSound('F')">F</div>
+    <div class="piano-key black" onclick="playSound('F#')">F#</div>
+    <div class="piano-key" onclick="playSound('G')">G</div>
+    <div class="piano-key black" onclick="playSound('G#')">G#</div>
+    <div class="piano-key" onclick="playSound('A')">A</div>
+    <div class="piano-key black" onclick="playSound('A#')">A#</div>
+    <div class="piano-key" onclick="playSound('B')">B</div>
+</div>
+<script>
+
+}
+</script>
+</body>
+</html>
